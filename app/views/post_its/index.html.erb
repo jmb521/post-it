@@ -1,0 +1,6 @@
+<h1>This is the Model's index page.</h1>
+<% @post_its.each do |post_it| %>
+  <div class="post_it">
+    <p><%= post_it.content %></p>
+  </div>
+<% end %>

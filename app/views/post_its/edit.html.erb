@@ -1,0 +1,13 @@
+<h3>Edit your Post-it</h3>
+
+<form action="/post_its/<%= @post_it.id %>" method="post">
+  <input type="hidden" name="_method" value="patch" />
+  <label for="content">Content</label>
+  <br />
+  <textarea id="content" name="content">
+    <%= @post_it.content %>
+  </textarea>
+  <br />
+  <br />
+  <input type="submit" name="submit" value="Submit" />
+</form>

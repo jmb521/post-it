@@ -1,0 +1,8 @@
+<h1>This is the show page for an individual instance of your model.</h1>
+<%= @post_it.content %>
+<br />
+<a href="/post_its/<%= @post_it.id%>/edit"><input type="button" value="Edit" /></a>
+<form action="/post_its/<%= @post_it.id%>/delete" method="post">
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" name="submit" value="Delete" />
+</form>
